@@ -20,16 +20,15 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oM4-k4-R5i" userLabel="pageControl" customClass="FSPageControl" customModule="FSPagerView">
-                                        <rect key="frame" x="87" y="574" width="240" height="40"/>
+                                        <rect key="frame" x="30" y="574" width="354" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="L84-qB-k3v"/>
                                             <constraint firstAttribute="height" constant="40" id="zJ7-gh-43R"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIj-4M-5kF" userLabel="pagerView" customClass="FSPagerView" customModule="FSPagerView">
                                         <rect key="frame" x="0.0" y="259" width="414" height="300"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="gY0-Z0-avR"/>
                                         </constraints>
@@ -37,10 +36,11 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
-                                    <constraint firstItem="oM4-k4-R5i" firstAttribute="centerX" secondItem="WhD-BK-JWv" secondAttribute="centerX" id="bO6-aL-LTp"/>
+                                    <constraint firstItem="oM4-k4-R5i" firstAttribute="leading" secondItem="WhD-BK-JWv" secondAttribute="leading" constant="30" id="BXf-QT-0ak"/>
                                     <constraint firstItem="VIj-4M-5kF" firstAttribute="leading" secondItem="WhD-BK-JWv" secondAttribute="leading" id="iB8-C6-7zL"/>
                                     <constraint firstAttribute="trailing" secondItem="VIj-4M-5kF" secondAttribute="trailing" id="jiu-AW-wMS"/>
                                     <constraint firstItem="VIj-4M-5kF" firstAttribute="centerY" secondItem="WhD-BK-JWv" secondAttribute="centerY" id="p9o-98-7Sb"/>
+                                    <constraint firstAttribute="trailing" secondItem="oM4-k4-R5i" secondAttribute="trailing" constant="30" id="qwF-jc-cqk"/>
                                     <constraint firstItem="oM4-k4-R5i" firstAttribute="top" secondItem="VIj-4M-5kF" secondAttribute="bottom" constant="15" id="wul-zE-2tS"/>
                                 </constraints>
                             </view>
@@ -53,6 +53,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="arrowshape.turn.up.left" catalog="system"/>
+                                <connections>
+                                    <action selector="onLeftBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGY-6l-dKs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMO-et-HQS">
                                 <rect key="frame" x="354" y="433" width="30" height="30"/>
@@ -63,6 +66,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="arrowshape.turn.up.right" catalog="system"/>
+                                <connections>
+                                    <action selector="onRightBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d42-TR-hbB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -79,8 +85,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="leftBtn" destination="dJS-78-4I9" id="Bqd-DZ-5Pw"/>
                         <outlet property="myPageControl" destination="oM4-k4-R5i" id="fZV-As-uan"/>
                         <outlet property="myPagerView" destination="VIj-4M-5kF" id="VwS-bM-jY2"/>
+                        <outlet property="rightBtn" destination="uMO-et-HQS" id="tYb-JS-Rjw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
