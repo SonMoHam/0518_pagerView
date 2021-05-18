@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0D2B469F18875CA2ECCBD628 /* Pods_0518_pagerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C99AC291E7ED34396F95060 /* Pods_0518_pagerView.framework */; };
+		124D2577265392C7004C053F /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 124D2573265392C7004C053F /* 4.jpeg */; };
+		124D2578265392C7004C053F /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 124D2574265392C7004C053F /* 1.jpeg */; };
+		124D2579265392C7004C053F /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 124D2575265392C7004C053F /* 2.jpeg */; };
+		124D257A265392C7004C053F /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 124D2576265392C7004C053F /* 3.jpeg */; };
 		125D0D53265388D700EFB505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125D0D52265388D700EFB505 /* AppDelegate.swift */; };
 		125D0D55265388D700EFB505 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125D0D54265388D700EFB505 /* SceneDelegate.swift */; };
 		125D0D57265388D700EFB505 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125D0D56265388D700EFB505 /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		124D2573265392C7004C053F /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
+		124D2574265392C7004C053F /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		124D2575265392C7004C053F /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		124D2576265392C7004C053F /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
 		125D0D4F265388D700EFB505 /* 0518_pagerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 0518_pagerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		125D0D52265388D700EFB505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		125D0D54265388D700EFB505 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +50,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		124D2572265390BA004C053F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				124D2574265392C7004C053F /* 1.jpeg */,
+				124D2575265392C7004C053F /* 2.jpeg */,
+				124D2576265392C7004C053F /* 3.jpeg */,
+				124D2573265392C7004C053F /* 4.jpeg */,
+				125D0D5B265388D800EFB505 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		125D0D46265388D700EFB505 = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +83,11 @@
 		125D0D51265388D700EFB505 /* 0518_pagerView */ = {
 			isa = PBXGroup;
 			children = (
+				124D2572265390BA004C053F /* Resources */,
 				125D0D52265388D700EFB505 /* AppDelegate.swift */,
 				125D0D54265388D700EFB505 /* SceneDelegate.swift */,
 				125D0D56265388D700EFB505 /* ViewController.swift */,
 				125D0D58265388D700EFB505 /* Main.storyboard */,
-				125D0D5B265388D800EFB505 /* Assets.xcassets */,
 				125D0D5D265388D800EFB505 /* LaunchScreen.storyboard */,
 				125D0D60265388D800EFB505 /* Info.plist */,
 			);
@@ -88,7 +108,6 @@
 				AF198358B9B36BF18404E7AD /* Pods-0518_pagerView.debug.xcconfig */,
 				189EAA7BCEA2DD253B666824 /* Pods-0518_pagerView.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -151,8 +170,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124D2578265392C7004C053F /* 1.jpeg in Resources */,
 				125D0D5F265388D800EFB505 /* LaunchScreen.storyboard in Resources */,
+				124D2579265392C7004C053F /* 2.jpeg in Resources */,
 				125D0D5C265388D800EFB505 /* Assets.xcassets in Resources */,
+				124D2577265392C7004C053F /* 4.jpeg in Resources */,
+				124D257A265392C7004C053F /* 3.jpeg in Resources */,
 				125D0D5A265388D700EFB505 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
