@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2B469F18875CA2ECCBD628 /* Pods_0518_pagerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C99AC291E7ED34396F95060 /* Pods_0518_pagerView.framework */; };
 		125D0D53265388D700EFB505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125D0D52265388D700EFB505 /* AppDelegate.swift */; };
 		125D0D55265388D700EFB505 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125D0D54265388D700EFB505 /* SceneDelegate.swift */; };
 		125D0D57265388D700EFB505 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125D0D56265388D700EFB505 /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		125D0D5B265388D800EFB505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		125D0D5E265388D800EFB505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		125D0D60265388D800EFB505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189EAA7BCEA2DD253B666824 /* Pods-0518_pagerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-0518_pagerView.release.xcconfig"; path = "Target Support Files/Pods-0518_pagerView/Pods-0518_pagerView.release.xcconfig"; sourceTree = "<group>"; };
+		1C99AC291E7ED34396F95060 /* Pods_0518_pagerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_0518_pagerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF198358B9B36BF18404E7AD /* Pods-0518_pagerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-0518_pagerView.debug.xcconfig"; path = "Target Support Files/Pods-0518_pagerView/Pods-0518_pagerView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2B469F18875CA2ECCBD628 /* Pods_0518_pagerView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				125D0D51265388D700EFB505 /* 0518_pagerView */,
 				125D0D50265388D700EFB505 /* Products */,
+				D276C497781BCB19AE6FD92F /* Pods */,
+				1B0DE9339E6EE2C94F7BB4FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = 0518_pagerView;
 			sourceTree = "<group>";
 		};
+		1B0DE9339E6EE2C94F7BB4FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C99AC291E7ED34396F95060 /* Pods_0518_pagerView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D276C497781BCB19AE6FD92F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF198358B9B36BF18404E7AD /* Pods-0518_pagerView.debug.xcconfig */,
+				189EAA7BCEA2DD253B666824 /* Pods-0518_pagerView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 125D0D63265388D800EFB505 /* Build configuration list for PBXNativeTarget "0518_pagerView" */;
 			buildPhases = (
+				FA97FEEC9B66AD4DAE179982 /* [CP] Check Pods Manifest.lock */,
 				125D0D4B265388D700EFB505 /* Sources */,
 				125D0D4C265388D700EFB505 /* Frameworks */,
 				125D0D4D265388D700EFB505 /* Resources */,
+				890324D2D8FEBECEB740238A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		890324D2D8FEBECEB740238A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-0518_pagerView/Pods-0518_pagerView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-0518_pagerView/Pods-0518_pagerView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-0518_pagerView/Pods-0518_pagerView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA97FEEC9B66AD4DAE179982 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-0518_pagerView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		125D0D4B265388D700EFB505 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		125D0D64265388D800EFB505 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF198358B9B36BF18404E7AD /* Pods-0518_pagerView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		125D0D65265388D800EFB505 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 189EAA7BCEA2DD253B666824 /* Pods-0518_pagerView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
